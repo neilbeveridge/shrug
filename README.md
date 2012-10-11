@@ -1,7 +1,7 @@
 shrug
 =====
 
-Simple Redis-based service throttle. Testing on a Macbook Pro yielded peak requests through the throttle at around 1850 requests per second.
+Simple Redis-based service throttle written in Java. Testing on a Macbook Pro yielded peak requests through the throttle at around 1850 requests per second.
 
 Features:
 * Responds with an HTTP 429 to clients who exceed a preset per second rate throttle.
