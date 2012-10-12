@@ -28,7 +28,7 @@ public class ThrottleTest {
     private static Throttle throttle = new RedisThrottleLua();
     private static CoolOff coolOff = new RedisCoolOff();
 
-    private long requestMax = 0;
+    private volatile long requestMax = 0;
 
     @RequestMapping("/throttle/{discriminator}/{limit}/{cooloff}")
     @ResponseBody
